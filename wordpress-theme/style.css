@@ -1,0 +1,507 @@
+/*
+Theme Name: Global Entretenimento IPTV
+Description: Tema WordPress para site de IPTV Premium com design moderno e responsivo
+Version: 1.0
+Author: Global Entretenimento
+*/
+
+/* Reset e Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #111827;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Header */
+.site-header {
+    background-color: #1f2937;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.logo .highlight {
+    color: #dc2626;
+}
+
+.status-online {
+    background-color: #16a34a;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    animation: pulse 2s infinite;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, #111827 0%, #1f2937 50%, #111827 100%);
+    padding: 5rem 0;
+    text-align: center;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    color: #d1d5db;
+    margin-bottom: 2rem;
+}
+
+.hero-tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.hero-tag {
+    background-color: rgba(220, 38, 38, 0.2);
+    color: #fca5a5;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    border: 1px solid #dc2626;
+    font-size: 0.875rem;
+}
+
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    background: linear-gradient(135deg, #dc2626, #b91c1c);
+    color: white;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-size: 1.125rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 25px rgba(220, 38, 38, 0.3);
+}
+
+.cta-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 35px rgba(220, 38, 38, 0.5);
+}
+
+/* Planos */
+.plans-section {
+    background-color: #1f2937;
+    padding: 5rem 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.section-subtitle {
+    text-align: center;
+    font-size: 1.125rem;
+    color: #d1d5db;
+    margin-bottom: 4rem;
+}
+
+.plans-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.plan-card {
+    background-color: #111827;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    border: 2px solid #374151;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.plan-card:hover {
+    transform: scale(1.05);
+    border-color: #dc2626;
+}
+
+.plan-card.popular {
+    border-color: #dc2626;
+    transform: scale(1.05);
+}
+
+.popular-badge {
+    position: absolute;
+    top: -1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #dc2626;
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: bold;
+}
+
+.plan-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.plan-pricing {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.original-price {
+    color: #9ca3af;
+    text-decoration: line-through;
+    font-size: 1.125rem;
+}
+
+.current-price {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #dc2626;
+    margin: 0.5rem 0;
+}
+
+.discount-badge {
+    background-color: #dc2626;
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+}
+
+.plan-benefits {
+    list-style: none;
+    margin-bottom: 2rem;
+}
+
+.plan-benefits li {
+    padding: 0.5rem 0;
+    font-size: 0.875rem;
+}
+
+/* Benefícios */
+.benefits-section {
+    background-color: #111827;
+    padding: 5rem 0;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.benefit-card {
+    background-color: #1f2937;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.benefit-card:hover {
+    transform: scale(1.05);
+}
+
+.benefit-icon {
+    width: 4rem;
+    height: 4rem;
+    color: #dc2626;
+    margin: 0 auto 1rem;
+}
+
+.benefit-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.benefit-description {
+    color: #d1d5db;
+}
+
+/* Depoimentos */
+.testimonials-section {
+    background-color: #1f2937;
+    padding: 5rem 0;
+}
+
+.testimonial-card {
+    background-color: #1f2937;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.testimonial-stars {
+    margin-bottom: 1rem;
+}
+
+.star {
+    color: #fbbf24;
+    font-size: 1.25rem;
+}
+
+.testimonial-text {
+    font-size: 1.125rem;
+    color: #d1d5db;
+    margin-bottom: 1.5rem;
+    font-style: italic;
+}
+
+.testimonial-author {
+    border-top: 1px solid #374151;
+    padding-top: 1.5rem;
+}
+
+.author-name {
+    font-weight: bold;
+    font-size: 1.125rem;
+}
+
+.author-location {
+    color: #9ca3af;
+}
+
+/* FAQ */
+.faq-section {
+    background-color: #111827;
+    padding: 5rem 0;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    background-color: #1f2937;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+
+.faq-question {
+    width: 100%;
+    text-align: left;
+    padding: 1.5rem;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.125rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-question:hover {
+    background-color: #374151;
+}
+
+.faq-answer {
+    padding: 0 1.5rem 1.5rem;
+    color: #d1d5db;
+    display: none;
+}
+
+.faq-answer.active {
+    display: block;
+}
+
+/* Footer */
+.site-footer {
+    background-color: #1f2937;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.footer-text {
+    color: #9ca3af;
+    margin-bottom: 1rem;
+}
+
+.footer-contact {
+    color: #6b7280;
+    font-size: 0.875rem;
+}
+
+/* Notificações */
+.notification {
+    position: fixed;
+    bottom: 1rem;
+    left: 1rem;
+    background-color: white;
+    color: #111827;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    border-left: 4px solid #dc2626;
+    max-width: 300px;
+    z-index: 1000;
+    animation: slideInLeft 0.5s ease-out;
+}
+
+.notification-indicator {
+    width: 0.75rem;
+    height: 0.75rem;
+    background-color: #16a34a;
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+}
+
+/* Animações */
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.8s ease-out;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .plans-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .header-content {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .hero-tags {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .notification {
+        left: 1rem;
+        right: 1rem;
+        max-width: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 0.5rem;
+    }
+    
+    .hero-section {
+        padding: 3rem 0;
+    }
+    
+    .plans-section,
+    .benefits-section,
+    .testimonials-section,
+    .faq-section {
+        padding: 3rem 0;
+    }
+}
+
+/* Acessibilidade */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Estados de foco */
+.cta-button:focus,
+.faq-question:focus {
+    outline: 2px solid #dc2626;
+    outline-offset: 2px;
+}
