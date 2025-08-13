@@ -1,0 +1,28 @@
+{
+  "site": 
+    "title": <h1>GLOBAL ENTRETENIMENTO</h1>
+
+
+    "description": "IPTV Premium com mais de 3.500 canais, 20.000 filmes e séries em qualidade 4K",
+    "whatsapp": "5511920040932",
+    "whatsappMessage": "Vi%20seu%20Site%20agora%20e%20Quero%20fazer%20um%20teste!"
+  },
+  "colors": {
+    "primary": "#dc2626",
+    "secondary": "#991b1b",
+    "dark": "#0f0f0f",
+    "gray": "#1a1a1a"
+  },
+  "features": {
+    "channels": "10.000",
+    "movies": "40.000",
+    "quality": "4K",
+    "support": "Todo Dia",
+    "guarantee": "7 dias"
+  },
+  "seo": {
+    "keywords": "IPTV, TV Online, Canais Premium, Filmes, Séries, 4K, Streaming",
+    "author": "IPTV Premium",
+    "robots": "index, follow"
+  }
+}
